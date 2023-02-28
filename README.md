@@ -1,2 +1,2 @@
-# Team-Newman_Software_Testing
+# Team-Newman Github Task
 Software Testing(GitHUB)
