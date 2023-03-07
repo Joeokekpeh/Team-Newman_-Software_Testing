@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "8a26f854-0196-44c0-af24-95af004f1876",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25851634"
+	},
+	"item": [
+		{
+			"name": "Simple Book API",
+			"item": [
+				{
+					"name": "API status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/status",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "API status",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/status",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 07 Mar 2023 12:30:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "15"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"f-v/Y1JusChTxrQUzPtNAKycooOTA\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"OK\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List of books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/books?limit=5",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"",
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "non-fiction",
+									"disabled": true
+								},
+								{
+									"key": "typy",
+									"value": "fiction",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List of books",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}//books",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 07 Mar 2023 12:38:23 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "417"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU\""
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"The Russian\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Just as I Am\",\n        \"type\": \"non-fiction\",\n        \"available\": false\n    },\n    {\n        \"id\": 3,\n        \"name\": \"The Vanishing Half\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"The Midnight Library\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Untamed\",\n        \"type\": \"non-fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Viscount Who Loved Me\",\n        \"type\": \"fiction\",\n        \"available\": true\n    }\n]"
+						},
+						{
+							"name": "List of books",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/books?type=non-fiction",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"",
+										"books"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "non-fiction"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 07 Mar 2023 12:44:36 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "135"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"87-fbXCfgu0GEMnqcRoXq5fuhhKazw\""
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Just as I Am\",\n        \"type\": \"non-fiction\",\n        \"available\": false\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Untamed\",\n        \"type\": \"non-fiction\",\n        \"available\": true\n    }\n]"
+						},
+						{
+							"name": "List of books",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/books?typy=fiction",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"",
+										"books"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "non-fiction",
+											"disabled": true
+										},
+										{
+											"key": "typy",
+											"value": "fiction"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 07 Mar 2023 12:46:30 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "417"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU\""
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"The Russian\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Just as I Am\",\n        \"type\": \"non-fiction\",\n        \"available\": false\n    },\n    {\n        \"id\": 3,\n        \"name\": \"The Vanishing Half\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"The Midnight Library\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Untamed\",\n        \"type\": \"non-fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Viscount Who Loved Me\",\n        \"type\": \"fiction\",\n        \"available\": true\n    }\n]"
+						},
+						{
+							"name": "List of books",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/books?limit=5",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"",
+										"books"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "non-fiction",
+											"disabled": true
+										},
+										{
+											"key": "typy",
+											"value": "fiction",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 07 Mar 2023 12:51:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "343"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Express"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"157-dipiXw3/0VOreKd19gF2wp5vDjE\""
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"The Russian\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Just as I Am\",\n        \"type\": \"non-fiction\",\n        \"available\": false\n    },\n    {\n        \"id\": 3,\n        \"name\": \"The Vanishing Half\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 4,\n        \"name\": \"The Midnight Library\",\n        \"type\": \"fiction\",\n        \"available\": true\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Untamed\",\n        \"type\": \"non-fiction\",\n        \"available\": true\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "order book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/order",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "https://simple-books-api.glitch.me"
+		}
+	]
+}
