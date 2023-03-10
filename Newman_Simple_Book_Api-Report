@@ -1,0 +1,27 @@
+
+Summary
+Total Requests 4
+Failed Tests 1
+Skipped Tests 0
+Newman Run Dashboard
+Friday, 10 March 2023 13:37:38
+TOTAL ITERATIONS
+1
+TOTAL ASSERTIONS
+1
+TOTAL FAILED TESTS
+1
+TOTAL SKIPPED TESTS
+0
+FILE INFORMATION
+ Collection: Simple Book API
+TIMINGS AND DATA
+ Total run duration: 3.7s
+ Total data received: 669B
+ Average response time: 867ms
+SUMMARY ITEM	TOTAL	FAILED
+Requests	4	0
+Prerequest Scripts	0	0
+Test Scripts	1	0
+Assertions	1	1
+Skipped Tests	0	-
