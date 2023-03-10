@@ -1,0 +1,44 @@
+newman
+
+Simple Book API
+
+❏ Simple Book API
+↳ API status
+  GET https://simple-books-api.glitch.me/status [200 OK, 226B, 35.1s]
+
+↳ List of books
+  GET https://simple-books-api.glitch.me//books?limit=5 [200 OK, 557B, 2.7s]
+
+↳ Get simple books   
+  GET https://simple-books-api.glitch.me/status        [404 Not Found, 415B, 3.5s]
+  1. Status code is 200
+
+→ order book
+  POST https://simple-books-api.glitch.me/order [404 Not Found, 394B, 3.1s]
+
+┌─────────────────────────┬────────────────────┬────────────────────┐
+│                         │           executed │             failed │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              iterations │                  1 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│                requests │                  4 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│            test-scripts │                  1 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│      prerequest-scripts │                  0 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              assertions │                  1 │                  1 │
+├─────────────────────────┴────────────────────┴────────────────────┤
+│ total run duration: 45.1s                                         │
+├───────────────────────────────────────────────────────────────────┤
+│ total data received: 669B (approx)                                │
+├───────────────────────────────────────────────────────────────────┤
+│ average response time: 11.1s [min: 2.7s, max: 35.1s, s.d.: 13.8s] │
+└───────────────────────────────────────────────────────────────────┘
+
+  #  failure                      detail                                                                                                         
+                                                                                                                                                 
+ 1.  AssertionError               Status code is 200                                                                                             
+                                  expected response to have status code 200 but got 404                                                          
+                                  at assertion:0 in test-script                                                                                  
+                                  inside "Simple Book API / Get simple books   
